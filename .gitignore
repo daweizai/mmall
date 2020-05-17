@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.class
 
 #package file
@@ -32,3 +33,28 @@ target/
 # system ignore
 .DS_Store
 Thumbs.db
+=======
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> 2a1c2526b15ac907ee81cb25b93ba24ad98a17e2
