@@ -1,6 +1,7 @@
 package com.mmall.dao;
 
 import com.mmall.pojo.MmallUser;
+import org.apache.ibatis.annotations.Param;
 
 public interface MmallUserDao {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +15,8 @@ public interface MmallUserDao {
     int updateByPrimaryKeySelective(MmallUser record);
 
     int updateByPrimaryKey(MmallUser record);
+
+    int checkUsername(String username);
+
+    MmallUser selectByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 }
