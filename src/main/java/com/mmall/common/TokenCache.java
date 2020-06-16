@@ -16,6 +16,8 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class TokenCache {
 
+    public static String TOKEN_PREFIX = "token_";
+
     private static LoadingCache<String, String> loadingCache = CacheBuilder.newBuilder()
             .initialCapacity(1000).maximumSize(10000)
             .expireAfterAccess(12, TimeUnit.HOURS)//访问后过期

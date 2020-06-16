@@ -60,11 +60,12 @@ public class MD5Util {
     }
 
     public static String MD5EncodeUtf8(String origin) {
+        origin = origin + PropertiesUtil.getProperty("password.salt", "");
         return MD5Encode(origin, "UTF-8");
     }
 
     public static void main(String[] args) {
-        //E10ADC3949BA59ABBE56E057F20F883E
+        //D8F80B67499E434EA61ADAF6E6219BF2
         String s = MD5EncodeUtf8("123456");
         System.out.println(s);
     }
